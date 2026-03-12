@@ -1,0 +1,18 @@
+<%- include("../partials/header", { title: title, nav: nav }) %>
+
+    <main>
+        <% if (title) { %>
+            <h1>
+                <%= title %>
+            </h1>
+            <% } else { %>
+                <% res.redirect('/') %>
+                    <% } %>
+
+                        <!-- Vehicle detail -->
+                        <div class="detail-container">
+                            <%- detail %>
+                        </div>
+    </main>
+
+    <%- include("../partials/footer") %>
